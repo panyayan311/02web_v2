@@ -556,8 +556,10 @@ img, svg { display: block; max-width: 100%; }
 .motion-ready .about-quote em::after { transform:scaleX(0); }
 .motion-ready .about-quote.is-visible em::after { transform:scaleX(1); }
 .about-message > p:first-child { margin: 0 0 3.2rem; font-size: clamp(1rem, 1.35vw, 1.2rem); line-height: 2.15; }
-.profile { padding-top:2rem; display:grid; grid-template-columns:7rem 1fr; gap:1.5rem; border-top:1px solid var(--ink); }
-.profile-mark { width:6rem; height:6rem; display:grid; place-items:center; color:var(--paper); background:var(--blue); font:800 2.8rem/1 var(--display); }
+.profile { padding-top:2rem; display:grid; grid-template-columns:clamp(10rem,15vw,13rem) minmax(0,1fr); gap:clamp(1.5rem,3vw,2.5rem); align-items:start; border-top:1px solid var(--ink); }
+.profile-photo { position:relative; width:100%; aspect-ratio:4/5; margin:0; overflow:hidden; border:2px solid var(--ink); background:var(--blue); box-shadow:.55rem .55rem 0 var(--blue); }
+.profile-photo img { width:100%; height:100%; display:block; object-fit:cover; }
+.profile-photo figcaption { position:absolute; right:.7rem; bottom:.7rem; min-width:2.55rem; padding:.38rem .45rem .34rem; color:var(--paper); background:var(--blue); font:800 1.15rem/1 var(--display); letter-spacing:.02em; text-align:center; }
 .profile p { margin:0; font-size:.79rem; line-height:1.9; }
 .profile > div > p:first-child { color:var(--blue); font:700 .65rem/1 var(--display); letter-spacing:.12em; }
 .profile h3 { margin:.75rem 0 1.2rem; font-size:1.45rem; }
@@ -570,12 +572,12 @@ img, svg { display: block; max-width: 100%; }
 .profile-facts strong,.profile-facts span { display:block; }
 .profile-facts strong { color:var(--blue); font:800 1.25rem/1 var(--display); letter-spacing:.03em; }
 .profile-facts span { margin-top:.45rem; font-size:.65rem; line-height:1.55; }
-.about-message.is-visible .profile-mark { animation:profile-mark-in 650ms 180ms cubic-bezier(.16,1,.3,1) both; }
+.about-message.is-visible .profile-photo { animation:profile-photo-in 780ms 160ms cubic-bezier(.16,1,.3,1) both; }
 .about-message.is-visible .profile-facts li { animation:fact-in 520ms cubic-bezier(.2,.7,.2,1) both; }
 .about-message.is-visible .profile-facts li:nth-child(1) { animation-delay:260ms; }
 .about-message.is-visible .profile-facts li:nth-child(2) { animation-delay:340ms; }
 .about-message.is-visible .profile-facts li:nth-child(3) { animation-delay:420ms; }
-@keyframes profile-mark-in { from { opacity:0; transform:rotate(-7deg) scale(.88); } to { opacity:1; transform:none; } }
+@keyframes profile-photo-in { from { opacity:0; clip-path:inset(0 0 100% 0); transform:translateY(.8rem) rotate(-1.5deg); } to { opacity:1; clip-path:inset(0); transform:none; } }
 @keyframes fact-in { from { opacity:0; transform:translateY(.5rem); } to { opacity:1; transform:none; } }
 
 .company { background: var(--paper-deep); }
@@ -756,8 +758,8 @@ img, svg { display: block; max-width: 100%; }
   .philosophy-card { min-height:0; padding:1.25rem; }
   .philosophy-card > p:not(.philosophy-stage-label) { margin-bottom:2.5rem; }
   .about-quote blockquote { font-size:2.25rem; }
-  .profile { grid-template-columns:1fr; gap:1rem; }
-  .profile-mark { width:4.2rem;height:4.2rem;font-size:2rem; }
+  .profile { grid-template-columns:1fr; gap:1.6rem; }
+  .profile-photo { width:min(100%,18rem); }
   .profile-facts { grid-template-columns:1fr; }
   .profile-facts li { padding:.75rem 0; }
   .profile-facts li + li { padding-left:0; border-top:1px solid var(--ink); border-left:0; }
@@ -789,7 +791,7 @@ img, svg { display: block; max-width: 100%; }
   *,*::before,*::after { animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; }
   .reveal { opacity:1; transform:none; }
   .ticker div { animation:none; }
-  .hero-line > span,.eyebrow,.eyebrow span,.hero-lead,.hero-copy > .button,.signature-zero,.signature-two,.hero-note,.growth-path li,.profile-mark,.profile-facts li { animation:none !important; opacity:1; transform:none !important; }
+  .hero-line > span,.eyebrow,.eyebrow span,.hero-lead,.hero-copy > .button,.signature-zero,.signature-two,.hero-note,.growth-path li,.profile-photo,.profile-facts li { animation:none !important; opacity:1; transform:none !important; }
   .hero-line:not(.hero-line-accent) > span { transform:scaleX(.96) !important; }
   .signature-two { transform:translateX(-.03em) !important; }
   .hero-signature { transform:none !important; will-change:auto; }

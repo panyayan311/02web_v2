@@ -10,6 +10,7 @@ const siteCss = read("assets/css/style.css");
 const motion = read("assets/js/philosophy-motion.js");
 const field = read("assets/js/vx-field.js");
 const sitemap = read("sitemap.xml");
+const profilePhoto = readFileSync(new URL("../assets/img/isshin-ando.webp", import.meta.url));
 
 const requiredCopy = [
   "VX — Vibes Transformation",
@@ -46,6 +47,8 @@ assert.equal((philosophy.match(/<h1[\s>]/g) || []).length, 1, "Philosophy needs 
 });
 
 assert.ok(home.includes('href="/philosophy/"'), "homepage must link to Philosophy");
+assert.ok(home.includes('class="profile-photo"') && home.includes('src="/assets/img/isshin-ando.webp"'), "profile photo must be rendered");
+assert.ok(profilePhoto.byteLength < 100 * 1024, "profile photo must stay web-optimized");
 assert.ok(sitemap.includes("https://zerotwo.tokyo/philosophy/"), "sitemap must include Philosophy");
 assert.ok(css.includes("prefers-reduced-motion: reduce"), "CSS needs reduced-motion fallback");
 assert.match(css, /\.vx-hero h1 span:first-child\s*\{[^}]*letter-spacing:\s*-\.025em;/s, "VIBES tracking regression");
