@@ -1,18 +1,149 @@
-# [Global: HTML5 website template](http://buckymaler.com/global)
+# 合同会社02 コーポレートサイト
 
-### [Featured on Freebiesbug](http://freebiesbug.com/psd-freebies/global-futuristic-one-page-portfolio-psd-html/)
+`zerotwo-site-renewal-spec.md` をもとに制作した、GitHub Pages向けの静的サイトです。
 
-Global is a modern and sleek website template crafted for professionals in the creative industry. Global can serve as a single page portfolio or be easily modified to serve as the perfect beginning for a hip creative agency.
+## このサイトが解く課題
 
-The original PSD is included and was provided by [Sergey Melnik](https://www.behance.net/SergeyMelnik).
+- [x] 旧サイトの抽象的な印象から、AI・開発・クリエイター支援の3事業がすぐ伝わる構成へ変更
+- [x] 「0→1→2」を単なる装飾ではなく、発見・実装・成長という企業の支援プロセスとして表現
+- [x] 企業理念を抽象語だけで終わらせず、0→1→2の3段階と日々の行動原則へ接続
+- [x] 問い合わせとライバー応募の導線を1ページ内で完結
+- [x] 終了済み事業は現在の実績・サービスとして表示しない
+- [x] 黒背景＋ネオンに寄りすぎない、温かい紙色・コバルト・コーラルの独自トーンを採用
 
-This project was developed with HTML5, Sass, jQuery, and Hammer.js.
+問題には4つの枝があります。
 
-Performance basics are covered: assets are minified into single CSS and JS files, and the images are optimized.
+1. **情報設計** — 何の会社か、どこまで支援できるか、実績は何かを短時間で理解できる必要がある。
+2. **ブランド設計** — 「02」を強く記憶させながら、AI企業にありがちな表現を避ける必要がある。
+3. **技術要件** — GitHub Pagesで動作し、スマートフォン・アクセシビリティ・SEOを満たす必要がある。
+4. **公開データ** — 問い合わせ送信先、GA4 ID、実績名など、仕様書だけでは確定できない情報がある。
 
-[LIVE PREVIEW](http://buckymaler.com/global)
+## 採用した解決方針
 
-## Misc:
+- **02 Journey**：Heroの直後に `0 / Discover → 1 / Build → 2 / Grow` を配置し、サービス全体の理解軸にした。
+- **巨大な02シグネチャ**：写真素材に依存せず、企業名そのものを視覚資産として使用した。
+- **編集的なグリッド**：細い罫線、大きな見出し、番号表現で、コンサルティングと実装力の両方を表現した。
+- **段階的開示**：Heroで価値、Servicesで手段、Worksで証拠、Philosophyで判断基準、Aboutで人物、Companyで信頼、Contactで行動へ進む順番にした。
+- **Philosophy Circuit**：「つくるだけで、終わらせない。」を核に、問いを定める・まず動かす・仕組みにするという3つの役割と、対応する行動原則を0→1→2の回路として表現した。
+- **VX Philosophy Page**：Core Value、Mission、5つのValues、0→1→2、Founder's Principleを独立ページで段階的に展開し、理念を日々の行動と提供プロセスへ接続した。
+- **Heat Circuit Motion**：DX→AX→VXのパルス、Valuesの熱伝播、0→1→2の描画、3つの引用と扉の動きにより、「人へ熱が伝わり変革が根づく」過程を可視化した。
+- **意味のあるモーション**：Heroの文字、`0→1→2` の進行線、Servicesの線画、Aboutの強調線など、読み順や事業プロセスを補う箇所だけを動かした。
+- **Paper Circuit WebGL**：細い配線、45度の曲がり、接点、コーラルの02刻印を紙面全体へ展開。発光ネオンを使わず、鉛筆・活版のような筆圧で技術感を表現した。
+- **カラム基準のContact見出し**：画面幅ではなくContact左カラムの実幅から文字サイズを決め、デスクトップから320pxまで指定どおり2行を維持する。
+- **代表者プロフィール**：2026年6月9日時点の職務経歴書を根拠に、技術・事業開発・経営を一貫して担う人物像と、確認できる数値実績を掲載した。
+- **静的構成**：HTML / CSS / JavaScriptのみで構成し、ビルドなしでGitHub Pagesへ配置できるようにした。
 
-* Follow Bucky: [Twitter](https://twitter.com/BuckyMaler), [GitHub](https://github.com/BuckyMaler)
-* Follow Sergey: [Dribbble](https://dribbble.com/sergeymelnik), [Bēhance](https://www.behance.net/SergeyMelnik)
+WebGLの方向性は、[Lazywebデザインレポート](https://www.lazyweb.com/report/lazyweb/b5aebcf1-750a-4807-83ac-4a97a290a21a/?source=create) の「Paper Circuit」モックアップを仕様として実装しています。1400×876の基準画像と比較し、ヘッダー、見出し、CTA、注記カード、工程ラインの位置と寸法を揃えました。
+
+Philosophyは、[NorthSand Philosophy](https://northsand.co.jp/philosophy/) の「核となる理念から、Vision / Mission、具体的な行動指針へ段階的に落とす」情報設計だけを参考にし、02独自の事業観と表現へ置き換えています。レイアウトは[Philosophy追加用Lazywebレポート](https://www.lazyweb.com/report/lazyweb/c0d3caf3-997c-49dc-81a4-28c8d44533ab/?source=create) の0→1→2ダイアグラムを基準にしています。
+
+## ファイル構成
+
+```text
+.
+├── index.html              # トップページ
+├── philosophy/index.html   # VXフィロソフィー専用ページ
+├── 404.html                # 404ページ
+├── privacy/index.html      # プライバシーポリシー
+├── assets/css/style.css    # レスポンシブデザイン
+├── assets/css/philosophy.css # Philosophy専用レイアウトと状態表現
+├── assets/js/main.js       # メニュー、表示演出、フォーム検証
+├── assets/js/webgl-field.js # HeroのWebGLシェーダー、描画制御
+├── assets/js/philosophy-motion.js # Philosophyの意味的なスクロール演出
+├── assets/js/vx-field.js   # VX HeroのHeat Circuit WebGL
+├── assets/img/             # favicon、OGP
+├── assets/fonts/           # 表示用フォント
+├── tests/verify-philosophy.mjs # コピー・導線・容量・禁止表記の契約テスト
+├── CNAME                   # zerotwo.tokyo
+├── robots.txt
+└── sitemap.xml
+```
+
+## 実装・エッジケース確認
+
+- [x] 320px以上のレスポンシブ表示
+- [x] 320 / 360 / 375 / 390 / 680 / 681 / 767 / 768 / 980 / 981 / 1024 / 1440pxで横はみ出し・主要要素の重なりがないことを実ブラウザーで確認
+- [x] Contact見出し「次の一手を、一緒につくる。」が全検証幅で指定改行どおり2行になることを確認
+- [x] Philosophyの0→1→2が320〜680pxでは縦、681px以上では横に流れ、カード同士が重ならないことを確認
+- [x] 320〜680pxでHero注記と成長ステップの間に22pxの余白を確保
+- [x] 横向き端末でも閲覧可能（向き固定・遮断なし）
+- [x] モバイルメニューはEscapeキーとリンク選択で閉じる
+- [x] モバイルメニュー開閉時に横スクロールが発生しない
+- [x] Philosophy追加後の6項目メニューが320×568pxから980×568pxまで画面内に収まることを確認
+- [x] フォームの必須・メール形式・同意チェックを日本語で表示
+- [x] エラー時は最初の不正フィールドへフォーカス
+- [x] スパム対策用honeypotを実装
+- [x] `prefers-reduced-motion` で演出を抑制
+- [x] Heroの段階表示、スクロール連動、線画描画、ホバー反応を外部ライブラリなしで実装
+- [x] WebGLの紙回路、接点、パルスを外部ライブラリなしのGLSLで生成
+- [x] WebGL非対応時はCanvasを隠し、既存Heroへ自動フォールバック
+- [x] Heroが画面外またはタブが非表示のときはWebGL描画を停止
+- [x] モバイルは18fps・描画密度0.9倍、デスクトップは24fps・最大1.25倍に制限
+- [x] モーション軽減時は全24個のreveal要素を即時表示し、Tickerとスクロール連動を停止
+- [x] モーション軽減時はWebGLを1フレームだけ描画し、時間差スクリーンショットのSHA-256一致を確認
+- [x] ページタイトル、description、OGP、JSON-LD、favicon、sitemap、robotsを実装
+- [x] レスポンシブ調整後のLighthouse mobile: Performance 99 / Accessibility 100 / Best Practices 100 / SEO 100
+- [x] FCP 1.5秒 / LCP 2.0秒 / CLS 0 / TBT 0ms（ローカル計測）
+- [x] トップ、Privacy、404でブラウザーコンソールエラーなし
+- [x] `/philosophy/` にCore Value → Mission → Values → How We Work → Founder's Principleの情報階層を実装
+- [x] 320 / 360 / 375 / 390 / 680 / 681 / 767 / 768 / 980 / 981 / 1024 / 1440pxでPhilosophyの横はみ出しが0pxであることを実ブラウザーで確認
+- [x] 680px以下でDX→AX→VXと0→1→2が縦回路、681px以上で横回路になることを確認
+- [x] 高速スクロールやページ内ジャンプで通過した要素も、未表示のまま残らず完成状態になることを確認
+- [x] PhilosophyのWebGLはデスクトップ24fps・モバイル18fps、DPRは最大1.25 / 0.9に制限
+- [x] Philosophyの追加JavaScriptは18,349 bytesで、30KBの上限内
+- [x] `prefers-reduced-motion` で連続アニメーション0件、WebGLは静止1フレーム、全26 reveal要素を表示
+- [x] WebGL初期化失敗時はCanvasを隠し、見出し・Values・引用・CTAを維持
+- [x] JavaScript無効時も5つのValues、3行の引用、CTAを最終読書順で表示
+- [x] Philosophy、トップ、Privacy、404でブラウザーコンソールエラー・警告なし
+- [x] 小さいコーラル文字は紙背景で4.82:1、本文色は5.60:1以上のコントラストを確保
+
+Philosophyの構造契約は次のコマンドで確認できます。
+
+```bash
+node tests/verify-philosophy.mjs
+```
+
+## 公開前に必ず確定する項目
+
+- [ ] フォームの `action` にFormspreeまたはSSGformの本番エンドポイントを設定する
+- [ ] GA4 Measurement IDを設定し、CTAクリックとフォーム完了イベントを確認する
+- [ ] AI導入・データ基盤構築案件、TikTok LIVE事務所名、Victoryの公開可否・正式表記を確定する
+- [ ] 代表者プロフィールと会社情報を最終確認する
+- [ ] プライバシーポリシーを法務確認する
+- [ ] GitHub Pages側でカスタムドメインとHTTPSを有効化し、DNSを確認する
+
+フォーム送信先が空の間は、入力内容を外部送信せず「デザイン確認用」と明示します。未設定なのに送信成功へ見せないための仕様です。
+
+## ローカル確認
+
+このディレクトリで次を実行し、トップは `http://localhost:4175/`、Philosophyは `http://localhost:4175/philosophy/` を開きます。
+
+```bash
+python3 -m http.server 4175
+```
+
+`file://` では絶対パスの挙動や404ページを正しく確認できないため、HTTPサーバー経由で確認してください。
+
+## 理解確認チェックリスト
+
+公開担当者は、次を自分の言葉で説明できれば引き継ぎ完了です。
+
+- [ ] なぜHeroだけで3事業を詳説せず、`0→1→2` と下層セクションへ情報を分けたのか
+- [ ] なぜ写真や黒＋ネオンではなく、02タイポグラフィと紙色をブランドの中心にしたのか
+- [ ] なぜデータ表現を発光ネオンではなく、紙の回路図と02刻印へ置き換えたのか
+- [ ] なぜPhilosophyを理念文だけで終わらせず、0→1→2の役割と3つの行動原則へ分解したのか
+- [ ] NorthSandから文言や意匠ではなく、理念から行動へ落とす情報階層だけを参考にした理由は何か
+- [ ] なぜ回路図を全面に置いても、文字より薄い筆圧にして階層を守っているのか
+- [ ] なぜContact見出しのサイズを画面幅ではなく、実際に文字が入る左カラム幅に連動させたのか
+- [ ] なぜWebGLのfps・描画密度を端末別に制限し、Heroが画面外なら停止するのか
+- [ ] `prefers-reduced-motion` では、なぜ完全削除ではなく静止した1フレームを残したのか
+- [ ] 代表者プロフィールの数値や肩書きを、どの一次資料に基づいて掲載したのか
+- [ ] フォームが現在は実送信しない理由と、本番化に必要な設定は何か
+- [ ] 未確定の実績情報を断定表示しないことが、なぜ信頼性に関わるのか
+- [ ] モバイル・アクセシビリティ・SEO対応が、問い合わせ獲得へどう影響するのか
+- [ ] なぜVXは企業の根本姿勢を示すCore Valueで、5つのValuesは観察できる行動基準なのか
+- [ ] なぜMissionは「02が何をするか」ではなく「相手にどんな変化を生むか」で表現しているのか
+- [ ] なぜ0→1→2はValuesの後に置き、理念を成果へ変換する実行方法として見せているのか
+- [ ] なぜ創業者の引用を企業のValueへ混ぜず、Founder's Principleとして分けているのか
+- [ ] なぜ各アニメーションを、熱伝播・起動・定着のいずれかを説明する動きに限定したのか
+- [ ] なぜ高速ジャンプで飛び越えた要素も完成状態へし、モーションが情報の閲覧を妨げないようにしたのか

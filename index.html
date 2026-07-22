@@ -1,187 +1,393 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ja">
 <head>
-  <title>02 inc.</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="HTML5 website template">
-  <meta name="keywords" content="global, template, html, sass, jquery">
-  <meta name="author" content="Bucky Maler">
-  <link rel="stylesheet" href="assets/css/main.css">
+  <title>合同会社02（ゼロツー）| AI導入・業務コンサルティング / システム開発 / クリエイタープロダクション</title>
+  <meta name="description" content="合同会社02は東京・渋谷のAI導入・業務コンサルティング会社です。生成AI活用、AIエージェント・RAG構築、データ基盤整備、システム開発から、TikTok LIVEを中心としたクリエイター支援まで、事業の立ち上げと成長を支援します。">
+  <meta name="theme-color" content="#f4f0e8">
+  <link rel="canonical" href="https://zerotwo.tokyo/">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/assets/fonts/barlow-condensed-800.woff2" as="font" type="font/woff2" crossorigin>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="合同会社02">
+  <meta property="og:title" content="合同会社02 | 0→1の、その先へ。">
+  <meta property="og:description" content="AI導入・業務コンサルティングからシステム開発、クリエイタープロダクションまで。事業の立ち上げと成長に、テクノロジーで伴走します。">
+  <meta property="og:image" content="https://zerotwo.tokyo/assets/img/ogp.png">
+  <meta property="og:url" content="https://zerotwo.tokyo/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/css/style.css?v=20260722-philosophy1">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "合同会社02",
+    "alternateName": "ゼロツー",
+    "url": "https://zerotwo.tokyo/",
+    "logo": "https://zerotwo.tokyo/assets/img/favicon.svg",
+    "email": "info@zerotwo.tokyo",
+    "foundingDate": "2021-12",
+    "address": {
+      "@type": "PostalAddress",
+      "postalCode": "150-0043",
+      "addressRegion": "東京都",
+      "addressLocality": "渋谷区",
+      "streetAddress": "道玄坂1丁目10番8号 渋谷道玄坂東急ビル2F-C",
+      "addressCountry": "JP"
+    }
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+  <div class="page-grain" aria-hidden="true"></div>
 
-<!-- notification for small viewports and landscape oriented smartphones -->
-<div class="device-notification">
-  <a class="device-notification--logo" href="#0">
-    <img src="assets/img/logo.png" alt="Global">
-    <p>02 inc</p>
-  </a>
-  <p class="device-notification--message">Global has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
-</div>
+  <header class="site-header" data-header>
+    <a class="brand" href="#top" aria-label="02 LLC（合同会社02）トップへ">
+      <span class="brand-zero">0</span><span class="brand-two">2</span>
+      <span class="brand-inc">LLC</span>
+    </a>
+    <nav class="desktop-nav" aria-label="メインナビゲーション">
+      <a href="#services">Services</a>
+      <a href="#works">Works</a>
+      <a href="/philosophy/">Philosophy</a>
+      <a href="#about">About</a>
+      <a href="#company">Company</a>
+    </nav>
+    <a class="header-contact" href="#contact">無料相談 <span aria-hidden="true">↗</span></a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-button>
+      <span class="sr-only">メニューを開く</span>
+      <span></span><span></span>
+    </button>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="モバイルナビゲーション" data-mobile-menu>
+      <a href="#services"><span>01</span>Services</a>
+      <a href="#works"><span>02</span>Works</a>
+      <a href="/philosophy/"><span>03</span>Philosophy</a>
+      <a href="#about"><span>04</span>About</a>
+      <a href="#company"><span>05</span>Company</a>
+      <a href="#contact"><span>06</span>Contact</a>
+    </nav>
+  </header>
 
-<div class="perspective effect-rotate-left">
-  <div class="container"><div class="outer-nav--return"></div>
-    <div id="viewport" class="l-viewport">
-      <div class="l-wrapper">
-        <header class="header">
-          <a class="header--logo" href="#0">
-            <p>02 inc.</p>
-          </a>
-          <button class="header--cta cta">Hire Us</button>
-          <div class="header--nav-toggle">
-            <span></span>
-          </div>
-        </header>
-        <nav class="l-side-nav">
-          <ul class="side-nav">
-            <li class="is-active"><span>Home</span></li>
-            <li><span>Works</span></li>
-            <li><span>About</span></li>
-            <li><span>Contact</span></li>
-            <li><span>Company</span></li>
-          </ul>
-        </nav>
-        <ul class="l-main-content main-content">
-          <li class="l-section section section--is-active">
-            <div class="intro">
-              <div class="intro--banner">
-                <h1>Your next<br>interactive<br>experience</h1>
-                <img src="assets/img/introduction-visual.png" alt="Welcome">
-              </div>
-              <div class="intro--options">
-                <a href="#0">
-                  <h3>next generation</h3>
-                  
-                </a>
-                <a href="#0">
-                  <h3>innovative ideas</h3>
-                  
-                </a>
-                <a href="#0">
-                  <h3>new culture from remix</h3>
-                </a>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="work">
-              <h2>Works</h2>
-              <div class="work--lockup">
-                <ul class="slider">
-                  <li class="slider--item slider--item-left">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="assets/img/ec.png" alt="Victory">
-                      </div>
-                      <p class="slider--item-title">EC</p>
-                      <p class="slider--item-description">EC事業</p>
-                    </a>
-                  </li>
-                  <li class="slider--item slider--item-center">
-                    <a href="https://goatfamilia.net">
-                      <div class="slider--item-image">
-                        <img src="assets/img/goat.png" alt="Metiew and Smith">
-                      </div>
-                      <p class="slider--item-title">GOAT Familia</p>
-                      <p class="slider--item-description">Vtuber事業</p>
-                    </a>
-                  </li>
-                  <li class="slider--item slider--item-right">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="assets/img/web.png" alt="Alex Nowak">
-                      </div>
-                      <p class="slider--item-title">Web Development</p>
-                      <p class="slider--item-description">Web開発</p>
-                    </a>
-                  </li>
-                </ul>
-                <div class="slider--prev">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
-                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
-                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
-                  </g>
-                  </svg>
-                </div>
-                <div class="slider--next">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                  </g>
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="about">
-              <div class="about--banner">
-                <h2>We<br>believe in<br>passionate<br>people</h2>
-                <img src="assets/img/about-visual.png" alt="About Us">
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="contact">
-              <div class="contact--lockup">
-                <div class="modal">
-                  <div class="modal--information">
-                    <p>東京都渋谷区道玄坂1丁目10番8号<br>渋谷道玄坂東急ビル2F−C</p>
-                    <a href="info@zerotwo.tokyo">info@zerotwo.tokyo</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="hire">
-              <h2>Company</h2>
-              <!-- checkout formspree.io for easy form setup -->
-              
-              <table id="table01">
-  <tr>
-    <th>社名</th>
-    <td>合同会社02</td>
-  </tr>
-  <tr>
-    <th>資本金</th>
-    <td> 1,000,000（資本準備金を含む）</td>
-  </tr>
-  <tr>
-    <th>設立</th>
-    <td>2021年12月</td>
-  </tr>
-  <tr>
-    <th>代表社員</th>
-    <td>安藤 一心</td>
-  </tr>
-  <tr>
-    <th>所在地</th>
-    <td>〒150-0043 東京都渋谷区道玄坂1丁目10番8号渋谷道玄坂東急ビル2F−C</td>
-  </tr>
-</table>
-            </div>
-          </li>
-        </ul>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <canvas class="hero-webgl" data-webgl data-webgl-state="idle" aria-hidden="true"></canvas>
+      <div class="hero-circuit-stamps" aria-hidden="true">
+        <span class="circuit-stamp circuit-stamp-top"></span>
+        <span class="circuit-stamp circuit-stamp-seal"></span>
+        <span class="circuit-stamp circuit-stamp-bottom"></span>
+      </div>
+
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span>BUSINESS BUILDER / AI IMPLEMENTER</p>
+        <h1 id="hero-title">
+          <span class="hero-line"><span>事業をつくる。</span></span>
+          <span class="hero-line"><span>技術で伸ばす。</span></span>
+          <span class="hero-line hero-line-accent"><span><em>0→1→2</em></span></span>
+        </h1>
+        <p class="hero-lead">AI導入・業務コンサルティングからシステム開発、クリエイタープロダクションまで。合同会社02は、構想を資料で終わらせず、動く仕組みへ変えていきます。</p>
+        <a class="button button-primary" href="#contact">無料相談する <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="hero-signature" aria-hidden="true">
+        <span class="signature-zero">0</span><span class="signature-two">2</span>
+      </div>
+
+      <aside class="hero-note reveal">
+        <strong>PoC is not the goal<span>.</span></strong>
+        <p>構想 / 検証 / 実装 / 定着まで、同じチームで前へ進める。</p>
+      </aside>
+
+      <ol class="growth-path" aria-label="支援の進め方">
+        <li class="reveal"><span>0 / Discover</span><strong>課題と可能性を見つける</strong></li>
+        <li class="reveal"><span>1 / Build</span><strong>小さく、速く、実装する</strong></li>
+        <li class="reveal"><span>2 / Grow</span><strong>運用に根づかせ、伸ばす</strong></li>
+      </ol>
+    </section>
+
+    <div class="ticker" aria-label="合同会社02の姿勢">
+      <div>
+        <span>ZERO TO ONE</span><i>→</i><span>ONE TO TWO</span><i>→</i><span>STRATEGY TO DELIVERY</span><i>→</i>
+        <span aria-hidden="true">ZERO TO ONE</span><i aria-hidden="true">→</i><span aria-hidden="true">ONE TO TWO</span><i aria-hidden="true">→</i><span aria-hidden="true">STRATEGY TO DELIVERY</span><i aria-hidden="true">→</i>
       </div>
     </div>
-  </div>
-  <ul class="outer-nav">
-    <li class="is-active">Home</li>
-    <li>Works</li>
-    <li>About</li>
-    <li>Contact</li>
-    <li>Company</li>
-  </ul>
-</div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
-<script src="assets/js/functions-min.js"></script>
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <header class="section-heading reveal">
+        <p class="section-index">01 / Services</p>
+        <div>
+          <h2 id="services-title">構想から実装、<br>成長まで。</h2>
+          <p>専門領域を分断せず、事業のフェーズに合わせて必要なチームを組みます。</p>
+        </div>
+      </header>
+
+      <div class="service-list">
+        <article class="service-card service-card-primary reveal">
+          <div class="service-number">01</div>
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64"><path d="M9 33h17M38 33h17M26 13v40M38 13v40"/><circle cx="32" cy="33" r="8"/></svg>
+          </div>
+          <div class="service-copy">
+            <p>PRIMARY SERVICE</p>
+            <h3>AI導入・<br>業務コンサルティング</h3>
+            <p>生成AI・LLMの業務活用を、構想から実装・定着まで一気通貫で支援します。AIエージェントやRAGの構築、業務フローの自動化、データ基盤（DWH / BI）の整備まで、“PoCで終わらない”AI導入を実現。ISMS取得推進の経験を踏まえ、セキュリティとガバナンスを考慮した導入を設計します。</p>
+            <ul class="tag-list" aria-label="対応領域">
+              <li>AI Agent</li><li>RAG</li><li>Automation</li><li>DWH / BI</li><li>Governance</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-number">02</div>
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64"><rect x="9" y="12" width="46" height="40" rx="2"/><path d="m25 25-8 7 8 7M39 25l8 7-8 7"/></svg>
+          </div>
+          <div class="service-copy">
+            <p>DEVELOPMENT</p>
+            <h3>システム・<br>Web開発</h3>
+            <p>Ruby on Rails / Laravel / Vue.jsを中心としたWebサービス開発から、TerraformによるAWSインフラ構築まで。企画・設計・開発・運用をワンストップで対応します。</p>
+          </div>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-number">03</div>
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64"><circle cx="32" cy="25" r="12"/><path d="M11 55c2-13 9-19 21-19s19 6 21 19M21 11l-6-5M43 11l6-5"/></svg>
+          </div>
+          <div class="service-copy">
+            <p>CREATOR PRODUCTION</p>
+            <h3>クリエイター<br>プロダクション</h3>
+            <p>TikTok LIVEを中心に、ライバー・タレントの発掘・育成、配信サポート、案件マネジメント、収益化支援まで、活動を総合的にプロデュースします。</p>
+          </div>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-number">04</div>
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64"><path d="M10 48V31M25 48V20M40 48V27M55 48V10"/><path d="m10 23 15-9 15 6 15-15"/></svg>
+          </div>
+          <div class="service-copy">
+            <p>MARKETING</p>
+            <h3>マーケティング<br>支援</h3>
+            <p>SNSアカウントの運用・グロース設計、インフルエンサーマーケティング、EC / D2Cブランドの立ち上げ支援など、実践で培った知見を提供します。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section works" id="works" aria-labelledby="works-title">
+      <header class="section-heading section-heading-light reveal">
+        <p class="section-index">02 / Works</p>
+        <div>
+          <h2 id="works-title">自分たちでも、<br>事業をつくる。</h2>
+          <p>支援するだけでなく、自社でもプロダクトとプロダクションを運営しています。</p>
+        </div>
+      </header>
+
+      <div class="work-grid">
+        <article class="work-card work-ai reveal">
+          <div class="work-art data-art" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="work-meta"><span>AI / Data</span><span class="status-pending">Scope in review</span></div>
+          <h3>AI導入・データ基盤構築</h3>
+          <p>公開可能な範囲を確認後、業種・規模・支援内容を匿名形式で掲載予定です。</p>
+        </article>
+
+        <a class="work-card work-live reveal" href="#contact" data-contact-type="ライバー・タレント応募">
+          <div class="work-art live-art" aria-hidden="true"><b>LIVE</b><span>●</span><i></i><i></i><i></i></div>
+          <div class="work-meta"><span>Creator Management</span><span class="status-pending">Name in review</span></div>
+          <h3>TikTok LIVE Creator Support</h3>
+          <p>ライバーのスカウト・育成から配信サポート、イベント企画、収益化までを支援します。</p>
+        </a>
+
+        <article class="work-card work-victory reveal">
+          <div class="work-art victory-art" aria-hidden="true"><span>V</span><i></i></div>
+          <div class="work-meta"><span>EC Business</span><span class="status-pending">Publication pending</span></div>
+          <h3>Victory</h3>
+          <p>紹介文と掲載可否の確認後に公開します。</p>
+        </article>
+      </div>
+      <p class="draft-note reveal">※ 「Scope in review」「Publication pending」の項目は、公開範囲・掲載可否の最終確認後に正式な内容へ差し替えます。</p>
+    </section>
+
+    <section class="section philosophy" id="philosophy" aria-labelledby="philosophy-title">
+      <header class="section-heading reveal">
+        <p class="section-index">03 / Philosophy</p>
+        <div>
+          <p class="philosophy-kicker">OUR BELIEF / FROM IDEA TO IMPACT</p>
+          <h2 id="philosophy-title">つくるだけで、<br>終わらせない。</h2>
+          <p>事業は、アイデアを形にした瞬間が始まりです。誰の、どんな課題を解くのかを見極め、小さく動かし、現場で使われ続ける仕組みに育てる。構想から実装、運用、成長まで、一つのチームとして成果に向き合います。</p>
+        </div>
+      </header>
+
+      <div class="philosophy-framework reveal">
+        <div class="philosophy-framework-meta" aria-hidden="true">
+          <span>02 PHILOSOPHY CIRCUIT</span>
+          <span>0 → 1 → 2</span>
+        </div>
+        <ol class="philosophy-journey">
+          <li class="philosophy-stage">
+            <div class="philosophy-node" aria-hidden="true"><span>0</span></div>
+            <div class="philosophy-card">
+              <p class="philosophy-stage-label">DISCOVER / PILLAR 01</p>
+              <h3>問いを定める。</h3>
+              <p>解くべき課題と、まだ言葉になっていない可能性を見つけます。</p>
+              <div class="philosophy-principle">
+                <span>STANCE 01</span>
+                <strong>現場から考える。</strong>
+                <small>仮説の前に、使う人と仕事を見る。</small>
+              </div>
+            </div>
+          </li>
+          <li class="philosophy-stage">
+            <div class="philosophy-node" aria-hidden="true"><span>1</span></div>
+            <div class="philosophy-card">
+              <p class="philosophy-stage-label">BUILD / PILLAR 02</p>
+              <h3>まず、動かす。</h3>
+              <p>小さくつくり、早く確かめ、学びを次の実装へ返します。</p>
+              <div class="philosophy-principle">
+                <span>STANCE 02</span>
+                <strong>言葉だけで終わらせない。</strong>
+                <small>伝えるより先に、触れられる形をつくる。</small>
+              </div>
+            </div>
+          </li>
+          <li class="philosophy-stage">
+            <div class="philosophy-node" aria-hidden="true"><span>2</span></div>
+            <div class="philosophy-card">
+              <p class="philosophy-stage-label">GROW / PILLAR 03</p>
+              <h3>仕組みにする。</h3>
+              <p>人と技術が無理なく回り、成果が積み上がる状態まで育てます。</p>
+              <div class="philosophy-principle">
+                <span>STANCE 03</span>
+                <strong>成果が根づくまで向き合う。</strong>
+                <small>納品ではなく、使われ続けることをゴールにする。</small>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+      <a class="philosophy-read-more button reveal" href="/philosophy/">
+        Philosophyを読む <span aria-hidden="true">→</span>
+      </a>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <header class="section-heading reveal">
+        <p class="section-index">04 / About</p>
+        <div><h2 id="about-title">つくる人の、<br>隣にいる。</h2></div>
+      </header>
+
+      <div class="about-layout">
+        <div class="about-quote reveal">
+          <span aria-hidden="true">“</span>
+          <blockquote>机上のコンサルティングではなく、<em>実装まで含めて伴走する。</em>それが私たちのスタイルです。</blockquote>
+        </div>
+        <div class="about-message reveal">
+          <p>私たちは、事業を「つくる」ことと「伸ばす」ことの両方を、自分たちの手でやってきました。起業、売却、ブランドのグロース、AIプロダクトの開発、データ基盤の構築——その全てが02の提供価値の土台です。</p>
+          <div class="profile">
+            <div class="profile-mark" aria-hidden="true">02</div>
+            <div class="profile-content">
+              <p>FOUNDER / BUSINESS BUILDER / ENGINEER</p>
+              <h3>安藤 一心 <span>Isshin Ando</span></h3>
+              <p class="profile-role">事業を構想し、コードを書き、<br>伸びる仕組みまでつくる。</p>
+              <p class="profile-bio">2016年、大学在学中の起業からキャリアをスタート。Webサービス開発を原点に、立ち上げたAI×アパレル事業を3か月で売却し、事業統括として1年で6ブランドを展開、年商2億円規模へ成長させました。現在は事業開発責任者として、AI広告運用プロダクト／SaaS、AIエージェント・RAG、DWH・機械学習基盤の企画と実装を主導。Rails / Laravel / Vue.jsからAWS / Terraformまで自ら手を動かしながら、事業計画、組織設計、セキュリティまで一つの視点でつなぎます。</p>
+              <ul class="profile-facts" aria-label="代表者の主な実績">
+                <li><strong>2016</strong><span>大学在学中に起業</span></li>
+                <li><strong>6 BRANDS</strong><span>1年でブランド展開</span></li>
+                <li><strong>¥200M</strong><span>ブランド事業 年商</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section company" id="company" aria-labelledby="company-title">
+      <header class="section-heading reveal">
+        <p class="section-index">05 / Company</p>
+        <div><h2 id="company-title">会社情報</h2></div>
+      </header>
+      <div class="company-table-wrap reveal">
+        <dl class="company-table">
+          <div><dt>社名</dt><dd>合同会社02</dd></div>
+          <div><dt>設立</dt><dd>2021年12月</dd></div>
+          <div><dt>代表社員</dt><dd>安藤 一心</dd></div>
+          <div><dt>資本金</dt><dd>1,000,000円</dd></div>
+          <div><dt>所在地</dt><dd>〒150-0043<br>東京都渋谷区道玄坂1丁目10番8号<br>渋谷道玄坂東急ビル2F-C</dd></div>
+          <div><dt>事業内容</dt><dd>AI導入・業務コンサルティング<br>システム・Web開発<br>クリエイターマネジメント<br>マーケティング支援</dd></div>
+          <div><dt>お問い合わせ</dt><dd><a href="mailto:info@zerotwo.tokyo">info@zerotwo.tokyo</a></dd></div>
+        </dl>
+        <div class="company-graphic" aria-hidden="true"><span>0</span><span>2</span><i>SHIBUYA / TOKYO</i></div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-intro reveal">
+        <p class="section-index">06 / Contact</p>
+        <h2 id="contact-title">次の一手を、<br>一緒につくる。</h2>
+        <p>まだ要件が固まっていなくても大丈夫です。課題や構想をお聞きし、最初に何を確かめるべきかから整理します。</p>
+        <div class="contact-response"><span>RESPONSE</span><strong>通常2営業日以内にご連絡します。</strong></div>
+      </div>
+
+      <form class="contact-form reveal" method="post" action="" data-contact-form novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="company-name">会社名 <span>任意</span></label>
+            <input id="company-name" name="company" type="text" autocomplete="organization">
+          </div>
+          <div class="field">
+            <label for="name">お名前 <b>必須</b></label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+            <span class="field-error" data-error-for="name"></span>
+          </div>
+        </div>
+        <div class="field">
+          <label for="email">メールアドレス <b>必須</b></label>
+          <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required>
+          <span class="field-error" data-error-for="email"></span>
+        </div>
+        <div class="field">
+          <label for="inquiry-type">お問い合わせ種別 <b>必須</b></label>
+          <select id="inquiry-type" name="inquiry_type" required>
+            <option value="">選択してください</option>
+            <option>AI導入のご相談</option>
+            <option>開発のご相談</option>
+            <option>ライバー・タレント応募</option>
+            <option>取材・その他</option>
+          </select>
+          <span class="field-error" data-error-for="inquiry-type"></span>
+        </div>
+        <div class="field">
+          <label for="message">お問い合わせ内容 <b>必須</b></label>
+          <textarea id="message" name="message" rows="6" required placeholder="現在の課題や実現したいことを、わかる範囲でご記入ください。"></textarea>
+          <span class="field-error" data-error-for="message"></span>
+        </div>
+        <div class="honeypot" aria-hidden="true">
+          <label for="website">ウェブサイト</label>
+          <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <label class="consent">
+          <input name="privacy" type="checkbox" required>
+          <span><a href="/privacy/" target="_blank" rel="noopener">プライバシーポリシー</a>に同意する <b>必須</b></span>
+        </label>
+        <span class="field-error consent-error" data-error-for="privacy"></span>
+        <button class="submit-button" type="submit">相談内容を送信する <span aria-hidden="true">→</span></button>
+        <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+        <p class="form-note">お急ぎの場合は <a href="mailto:info@zerotwo.tokyo">info@zerotwo.tokyo</a> までご連絡ください。</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><span>0</span><span>2</span></div>
+    <p>事業をつくる。技術で伸ばす。</p>
+    <nav aria-label="フッターナビゲーション"><a href="#services">Services</a><a href="#works">Works</a><a href="/philosophy/">Philosophy</a><a href="#about">About</a><a href="/privacy/">Privacy</a></nav>
+    <p class="copyright">© <span data-current-year>2026</span> 02 LLC.</p>
+  </footer>
+
+  <script src="/assets/js/webgl-field.js?v=20260722-paper-circuit3" defer></script>
+  <script src="/assets/js/main.js?v=20260722-paper-circuit3" defer></script>
 </body>
 </html>
