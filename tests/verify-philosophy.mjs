@@ -53,6 +53,7 @@ assert.ok(sitemap.includes("https://zerotwo.tokyo/philosophy/"), "sitemap must i
 assert.ok(css.includes("prefers-reduced-motion: reduce"), "CSS needs reduced-motion fallback");
 assert.match(css, /\.vx-hero h1 span:first-child\s*\{[^}]*letter-spacing:\s*-\.025em;/s, "VIBES tracking regression");
 assert.match(siteCss, /\.philosophy-node\s*\{[^}]*font-variant-numeric:tabular-nums;[^}]*letter-spacing:0;/s, "journey number centering regression");
+assert.match(siteCss, /@media \(max-width: 680px\)[\s\S]*?\.profile-photo\s*\{\s*width:min\(100%,22rem\);\s*\}/, "mobile profile balance regression");
 assert.ok(motion.includes("IntersectionObserver"), "motion needs viewport orchestration");
 assert.ok(field.includes("1000 / 18") && field.includes("1000 / 24"), "WebGL fps budgets must be explicit");
 assert.ok(Buffer.byteLength(motion) + Buffer.byteLength(field) < 30 * 1024, "Philosophy JS exceeds 30KB");

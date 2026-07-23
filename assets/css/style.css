@@ -734,17 +734,17 @@ img, svg { display: block; max-width: 100%; }
   .growth-path li { min-height:4rem; padding:.75rem var(--pad) !important; display:grid; grid-template-columns:7rem 1fr; gap:1rem; align-items:center; border-right:0; border-bottom:1px solid var(--ink); }
   .growth-path li::before { display:none; }
   .growth-path strong { margin:0; font-size:.74rem; }
-  .section { padding-block:5rem; }
-  .section-heading { grid-template-columns:1fr; gap:1.8rem; }
-  .section-heading h2 { font-size:clamp(3.25rem,15vw,5.1rem); line-height:1.02; }
-  .service-card { grid-template-columns:2.5rem 3.5rem 1fr; gap:.8rem; padding:2rem 0; }
+  .section { padding-block:clamp(4.5rem,18vw,5rem); }
+  .section-heading { grid-template-columns:1fr; gap:1.45rem; margin-bottom:clamp(2.75rem,12vw,3rem); }
+  .section-heading h2 { font-size:clamp(3rem,14.2vw,4.8rem); line-height:1.02; }
+  .service-card { grid-template-columns:2.5rem 3.5rem 1fr; gap:.8rem; padding:clamp(1.7rem,7vw,2rem) 0; }
   .service-icon { width:3.2rem;height:3.2rem; }
   .service-icon svg { width:2.8rem; }
-  .service-copy h3 { font-size:2.3rem; }
+  .service-copy h3 { font-size:clamp(2.05rem,9.5vw,2.3rem); }
   .service-copy > p:not(:first-child) { font-size:.82rem; line-height:1.9; }
   .work-grid { grid-template-columns:1fr; }
   .work-card:last-child { grid-column:auto; }
-  .work-art { min-height:19rem; }
+  .work-art { min-height:clamp(15.5rem,78vw,19rem); }
   .philosophy .section-heading h2 { font-size:clamp(2.7rem,12vw,3.6rem); }
   .philosophy-framework { margin-inline:calc(var(--pad) * -.28); padding:1rem; }
   .philosophy-framework-meta { margin-bottom:1.5rem; }
@@ -757,14 +757,14 @@ img, svg { display: block; max-width: 100%; }
   .philosophy-node { width:4.5rem; margin:0 0 1rem; font-size:3.5rem; }
   .philosophy-card { min-height:0; padding:1.25rem; }
   .philosophy-card > p:not(.philosophy-stage-label) { margin-bottom:2.5rem; }
-  .about-quote blockquote { font-size:2.25rem; }
+  .about-quote blockquote { font-size:clamp(1.9rem,9.2vw,2.25rem); }
   .profile { grid-template-columns:1fr; gap:1.6rem; }
-  .profile-photo { width:min(100%,18rem); }
+  .profile-photo { width:min(100%,22rem); }
   .profile-facts { grid-template-columns:1fr; }
   .profile-facts li { padding:.75rem 0; }
   .profile-facts li + li { padding-left:0; border-top:1px solid var(--ink); border-left:0; }
   .company-table > div { grid-template-columns:6.2rem 1fr; }
-  .company-graphic { min-height:18rem; }
+  .company-graphic { min-height:clamp(16rem,74vw,18rem); }
   .contact-intro { display:block; }
   .contact-intro h2 { margin-top:2rem; }
   .form-row { grid-template-columns:1fr; gap:0; }
@@ -776,7 +776,7 @@ img, svg { display: block; max-width: 100%; }
 }
 
 @media (max-width: 380px) {
-  :root { --pad:1rem; }
+  :root { --pad:1.125rem; }
   .brand { font-size:2rem; }
   .hero h1 { font-size:3.35rem; }
   .button { width:100%; }
