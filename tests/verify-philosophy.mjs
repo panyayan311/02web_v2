@@ -33,6 +33,7 @@ requiredCopy.forEach((copy) => {
 
 assert.match(philosophy, /<h1[\s>]/, "Philosophy needs one h1");
 assert.equal((philosophy.match(/<h1[\s>]/g) || []).length, 1, "Philosophy needs exactly one h1");
+assert.ok(philosophy.includes('id="founder-title">答えは、<br>動いた先にある。</h2>'), "founder principle headline regressed");
 
 [
   "why-vx",
